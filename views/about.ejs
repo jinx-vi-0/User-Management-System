@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 42px;
+      color: #333;
+    }
+    .image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+      text-align: justify;
+      color: #666;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .content p {
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #999;
+    }
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>About Us</h1>
+    </div>
+    <div class="image">
+      <img src="img/picture.jpg" alt="Laptop">
+    </div>
+    <div class="content">
+      <p>Welcome to our User Management System!</p>
+      <p>Empowering organizations with seamless user administration solutions.</p>
+      <p>From startups to enterprises, our platform simplifies user management tasks, ensuring efficiency and productivity.</p>
+      <p>Experience hassle-free user administration with our intuitive tools and personalized support.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; <span id="copyright"></span> jinx. Made with ❤️ </p>
+    </div>
+  </div>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('copyright').textContent = currentYear;
+  </script>
+</body>
+</html>
